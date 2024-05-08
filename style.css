@@ -1,16 +1,16 @@
 @font-face {
     font-family: font1;
-    src: url(/ABCSocialMono-Regular.ttf);
+    src: url('./ABCSocialMono-Regular.ttf');
 }
 
 @font-face {
     font-family: font2;
-    src: url(/Futura-Bold.ttf);
+    src: url('./Futura-Bold.ttf');
 }
 
 @font-face {
     font-family: font3;
-    src: url(/HelveticaNowText-Regular.ttf);
+    src: url('./HelveticaNowText-Regular.ttf');
 }
 
 * {
