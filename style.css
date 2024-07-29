@@ -1,10 +1,14 @@
+/* Fonts  -- ttf - woff2
+ImAGES -  jpg, png - webp */
+
+
 @font-face {
     font-family: font1;
     src: url('./ABCSocialMono-Regular.ttf');
 }
 
 @font-face {
-    font-family: font2;
+    font-family: futura;
     src: url('./Futura-Bold.ttf');
 }
 
@@ -70,7 +74,7 @@ body {
 }
 #full-menu .b2 h2{
     font-size: 3vw;
-    font-family: font2;
+    font-family: futura;
 }
 #full-menu .b2{
     width: 50%;
@@ -93,7 +97,7 @@ body {
     justify-content: space-between;
     position: fixed;
     padding: 1.5vw;
-    width: 100%;
+    width: 100vw;
     font-family: font3;
     z-index: 9999;
 }
@@ -149,6 +153,7 @@ body {
 }
 
 #menus {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 0.4vw;
@@ -177,7 +182,7 @@ body {
 
 #page1 h1 {
     padding-left: 1vw;
-    font-family: font2;
+    font-family: futura;
     text-transform: uppercase;
     font-size: 15vw;
     line-height: 14vw;
@@ -214,7 +219,7 @@ body {
     width: 10vw;
     display: flex;
     color: white;
-    font-family: font2;
+    font-family: futura;
     align-items: center;
     justify-content: center;  
     transform: translate(-50%,-50%) scale(0);
@@ -310,7 +315,7 @@ body {
 }
 
 #box1 {
-    font-family: font2;
+    font-family: futura;
     font-size: 1.7vw;
     width: 60%;
     line-height: 4vw;
@@ -431,7 +436,7 @@ body {
     color: #606060;
 }
 #page4>h1{
-    font-family: font2;
+    font-family: futura;
     font-size: 5vw;
     width: 90%;
     text-align: center;
@@ -484,7 +489,7 @@ body {
 }
 
 #impact-1 h1 {
-    font-family: font2;
+    font-family: futura;
     font-size: 1.5vw;
 }
 
@@ -540,7 +545,7 @@ body {
     transform-origin: left;
 }
 .bars h2{
-    font-family: font2;
+    font-family: futura;
     font-size: 2.4vw;
 }
 .bar img{
@@ -599,4 +604,265 @@ body {
     font-family: font3;
     color: #000000;
     padding: 5vw 2vw;
+}
+
+@media (max-width:600px) {
+    
+    #full-menu .b1{
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 10vw;
+    }
+    #full-menu .b1 .fc h3{
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+    #full-menu .b1 .fc h4{
+        color: white;
+        font-size: 4vw;
+        /* background-color: red; */
+    }
+
+    #full-menu .b2 h2{
+        font-size: 5vw;
+        font-family: futura;
+    }
+    #logo svg:nth-child(2){
+        height: 50px;
+    }
+    #logo svg:nth-child(1){
+        height: 50px;
+        left:-13%;
+    }
+    #nav #nav2{
+        gap: 6vw;
+    }
+    
+    #nav h1,#nav h2 {
+        display: none;
+    }
+    
+    #menus {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4vw;
+        align-items: center;
+        transition: all ease .5s;
+        margin-top: 0.4vw;
+    
+    }
+    .over h1{
+        padding-top: 25vw;
+    }
+    .over2 h1{
+        padding-top: 0vw;
+    }
+    #page0 {
+        margin-top: 3vw;
+        height: 40vh;
+    }
+    .cursor{
+        display: none;
+    }
+    .bar {
+        margin: 5vw 1vw;
+    }
+    
+    .bars {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+    #page2 {
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .shops{
+        padding: 2vw;
+        border-radius: 5vw;
+    }
+    .dot{
+        width: 2vw;
+    }
+    .shop1{
+        font-size: 1.5vw;
+    }
+    .shop2{
+        font-size: 1.5vw;
+    }
+    .shop2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .pics {
+        width: 100%;
+    }
+    
+    .pics img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #box {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #box1 {
+        font-size: 3.5vw;
+        width: 100%;
+        line-height: 7.5vw;
+    }
+    
+    #box2 {
+        margin-top: 3vw;
+        width: 100%;
+        gap: 2vw;
+        align-items: start;
+    
+    }
+    
+    #box2 h3 {
+        font-size: 2.5vw;
+        width: 80%;
+    }
+    
+    #box2 h4 {
+        width: 80%;
+        font-size: 2.5vw;
+    }
+    
+    #product {
+        margin-top: 0vw;
+    }
+    
+    #product-1,
+    #product-2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 3vw;
+    }
+    
+    .products {
+        height: 40vh;
+        width: 48vw;
+    }
+    
+    .products img {
+        width: 90%;
+        object-fit: cover;
+    }
+    
+    .products .price {
+        font-size: 2vw;
+        font-family: font3;
+    }
+    
+    .bullet{
+        height: 2vw;
+    }
+
+    #quotes{
+        gap: 15vw;
+    }
+    .quote{
+        width: 10%;
+        font-size: 2vw;
+    }
+    /* --------------------------------------------------------------------------------------------------------- */
+
+    #bar3 {
+        margin: 10vw 0vw;
+    }
+
+    #bar3 h1{
+        font-size: 2.5vw;
+    }
+
+    #page4 button{
+        width: 60%;
+        color: white;
+        padding: 2vw;
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+    }
+    #page4 h2{
+        font-size: 2.5vw;
+    }
+    
+    #page5 {
+        flex-direction: column-reverse;
+        gap: 5vw;
+        margin-bottom: 10vw;
+    }
+    
+    #impact-1 {
+        width: 100%;
+        height: max-content;
+    }
+    
+    #impact-1 h1 {
+        font-family: futura;
+        font-size: 4vw;
+    }
+    
+    #impact-1 h2 {
+        font-size: 3vw;
+        width: 90%;
+    }
+    
+    #impact-1 h3 {
+        font-size: 2vw;
+    }
+    
+    .imps {
+        height: 40vh;
+        width: 100%;
+    }
+
+
+    .bars h2{
+        font-family: futura;
+        font-size: 3vw;
+    }
+    .bar img{
+        position: absolute;
+        width: 18vw;
+        top: -2vw;
+        left: 50.3vw;
+    }
+
+
+    
+    #footer {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 5vw;
+    }
+    .foots h1{
+        color: #606060;
+        font-weight: 200;
+        font-size: 2vw;
+        margin-bottom: 1.5vw;
+    }
+    #foot2 svg{
+        width: 20vw;
+        height:30vh;
+    }
+    .foots h2{
+        font-weight: 200;
+        margin-top: 0.3vw;
+        font-size:2vw;
+    }
+    #foot3 {
+        text-align: right;
+    }
+    #about{
+        width: 90%;
+        font-size: 2vw;
+    }
+   
 }
